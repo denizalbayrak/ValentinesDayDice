@@ -1,0 +1,79 @@
+.container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+  width: 500px;
+}
+
+body {
+  background-color: #ffeaf6;
+}
+
+h1 {
+  margin: 30px;
+  font-family: 'Lobster', cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 8rem;
+  color: #ff69b4;
+}
+
+p {
+  font-size: 2rem;
+  color: #ffb3de;
+  font-family: 'Indie Flower', cursive;
+}
+
+img {
+  width: 40%;
+}
+
+footer {
+  margin-top: 5%;
+  color: #EEEEEE;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+
+}
+
+footer a{
+  color: #cb3ac1;
+}
+
+footer a:hover {
+  color: #2f052c; 
+}
+
+.hearts-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Kullanıcı tıklamalarına engel olmasın */
+  overflow: hidden;
+}
+
+.heart {
+  position: absolute;
+  top: -50px; /* Sayfanın üstünden başlaması için */
+  width: 10px; /* Kalp büyüklüğü */
+  height: auto;
+  animation: fall linear infinite; /* animasyonAdı süre zamanlama-fonksiyonu(ease) tekrar-sayısı; */
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) scale(0.5);
+    opacity: 0;
+  }
+}
