@@ -33,22 +33,6 @@ img {
   width: 40%;
 }
 
-footer {
-  margin-top: 5%;
-  color: #EEEEEE;
-  text-align: center;
-  font-family: 'Indie Flower', cursive;
-
-}
-
-footer a{
-  color: #cb3ac1;
-}
-
-footer a:hover {
-  color: #2f052c; 
-}
-
 .hearts-container {
   position: fixed;
   top: 0;
